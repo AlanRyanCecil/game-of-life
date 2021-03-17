@@ -1,0 +1,58 @@
+body {
+  background-color: #A5988D; }
+
+.single-cell {
+  width: 1.44vw;
+  height: 1.44vw;
+  border: 0.1vw solid #555;
+  margin: auto;
+  display: inline-block;
+  background-color: #8FAA51; }
+
+.single-cell:hover {
+  background-color: #60694E; }
+
+.single-cell.alive:hover {
+  background-color: #334E5C; }
+
+.alive {
+  background-color: #47B3D9; }
+
+.single-row {
+  width: 36vw;
+  height: 1.44vw; }
+
+.environment {
+  display: inline-block;
+  margin-left: 32vw; }
+
+.main-title {
+  font-family: 'Press Start 2P', cursive;
+  background-color: #675B53;
+  color: #8FAA51;
+  text-shadow: 0.1vw 0.1vw 0 #FFFFB3;
+  width: 43.2vw;
+  padding: 1vw;
+  margin: auto;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  border-radius: 0.3vw; }
+
+#gen-count {
+  background-color: #110001;
+  color: #E53434;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3vw;
+  text-align: right;
+  padding: 1vw;
+  margin-top: 0.5vw;
+  border-radius: 0.3vw; }
+
+#gen-label {
+  font-family: 'Press Start 2P', cursive;
+  margin-top: 1vw;
+  text-shadow: 0.1vw 0.1vw 0.2vw black;
+  color: #E53434; }
+
+button {
+  margin: 0.2vw; }

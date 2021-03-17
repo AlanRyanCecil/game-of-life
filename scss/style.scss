@@ -1,0 +1,77 @@
+$alive: #47B3D9;
+$hoverDead: #60694E;
+$hoverLive: #334E5C;
+$boardDimension: 36vw;
+$cellDimension: $boardDimension / 25;
+$cellColor: #8FAA51;
+$gridColor: #555;
+
+body {
+    background-color: #A5988D;
+}
+
+.single-cell {
+    width: $cellDimension;
+    height: $cellDimension;
+    border: 0.1vw solid $gridColor;
+    margin: auto;
+    display: inline-block;
+    background-color: $cellColor;
+}
+
+.single-cell:hover {
+    background-color: $hoverDead;
+}
+
+.single-cell.alive:hover {
+    background-color: $hoverLive;
+}
+
+.alive {
+    background-color: $alive;
+}
+
+.single-row {
+    width: $boardDimension;
+    height: $cellDimension;
+}
+
+.environment {
+    display: inline-block;
+    margin-left: (100 - $boardDimension) / 2;
+}
+
+.main-title {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #675B53;
+    color: $cellColor;
+    text-shadow: 0.1vw 0.1vw 0 #FFFFB3;
+    width: $boardDimension * 1.2;
+    padding: 1vw;
+    margin: auto;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    border-radius: 0.3vw;
+}
+
+#gen-count {
+    background-color: #110001;
+    color: #E53434;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3vw;
+    text-align: right;
+    padding: 1vw;
+    margin-top: 0.5vw;
+    border-radius: 0.3vw;
+}
+
+#gen-label {
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 1vw;
+    text-shadow: 0.1vw 0.1vw 0.2vw black;
+    color: #E53434;
+}
+
+button {
+    margin: 0.2vw;
+}
