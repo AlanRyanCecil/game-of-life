@@ -1,0 +1,25 @@
+{
+  "name": "game-of-life",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "build": "babel js --watch -d lib --presets react",
+    "sass": "node-sass -w scss/style.scss lib/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-preset-react": "^6.23.0",
+    "express": "^4.15.2",
+    "node-sass": "^4.5.0"
+  }
+}
