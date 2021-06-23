@@ -10,6 +10,7 @@ phases:
     commands:
       - echo Installing dependencies...
       - npm install
+      - npm install vite
   install:
     commands:
       - echo Building...
